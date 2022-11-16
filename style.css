@@ -1,0 +1,53 @@
+h1 { margin-top: 30px; } /* adds margin to title */ 
+
+body { font-size: 13px; } /* sets default font size for body text */ 
+
+a { color: blue; } /* makes links blue */ 
+
+
+path { 
+    stroke: #000; /* makes boundary lines black */ 
+    stroke-opacity: 0.5; /* makes county lines 50% transparent */ 
+} 
+
+path.states {
+    fill: none; /* eliminates fill of state path */ 
+    stroke-opacity: 1.0; /* sets state boundary to full opacity */ 
+}
+
+
+#color { 
+    position: absolute; /* prevents positioning conflicts */ 
+    left: 620px; /* initial x position */ 
+    top: 175px; /* initial y position */
+}
+
+#county {
+    position: absolute; /* prevents positioning conflicts */ 
+    left: 578px; /* initial x position */ 
+    top: 250px; /* initial y position */
+}
+
+
+#tooltip {
+    position: absolute; /* prevents positioning conflicts */  
+    left: 318px; /* initial x position */ 
+    top: 395px; /* initial y position */ 
+    width: auto; /* sets width as needed to fit text */ 
+    height: auto; /* sets height as needed to fit text */ 
+    padding: 10px; /* applies tooltip padding */ 
+    background-color: white; /* sets background color to white */ 
+    border-radius: 10px; /* rounds out edges */ 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4); /* sets shadow */  
+}
+
+#tooltip.hidden { 
+    display: none; /* hides display of tooltip when not in use */ 
+}
+
+#tooltip p {
+    margin: 0; /* eliminates margin */
+    font-family: Futura; /* sets tooltip font */ 
+    font-size: 16px; /* sets tooltip font size */ 
+    line-height: 20px; /* sets tooltip line height */ 
+}
